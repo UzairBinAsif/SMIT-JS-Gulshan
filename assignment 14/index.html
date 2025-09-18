@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - 14 (Ch 45 - 48)</title>
+</head>
+<body>
+    <div style="display: flex; justify-content: center; margin: 25px 0px;">
+        <a href="#" onclick="alert('Hi, how are you!');">Click Me</a>
+    </div>
+    <div style="display: flex; justify-content: space-evenly; margin: 25px 0px;">
+        <img onclick="alert('Thanks for purchasing from us.');" style="cursor: pointer;" src="https://th.bing.com/th/id/OIP.MUC_vVS2whe4xPA1HS0mGwHaFj?w=251&h=188&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="mobile 1">
+        <img onclick="alert('Thanks for purchasing from us.');" style="cursor: pointer;" src="https://th.bing.com/th/id/OIP.hyZ2366ybuv0Fz3-1OTyLwHaE8?w=282&h=188&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="mobile 1">
+        <img onclick="alert('Thanks for purchasing from us.');" style="cursor: pointer;" src="https://th.bing.com/th/id/OIP.cLbYjI2_uBRiG7e1L_7UTgHaHa?w=162&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="mobile 1">
+        <img onclick="alert('Thanks for purchasing from us.');" style="cursor: pointer;" src="https://th.bing.com/th/id/OIP.4bQIU_n2KRG83xaUtcrX0wHaEd?w=292&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="mobile 1">
+    </div>
+    <table border style="width: 40vw; margin: 25px auto; text-align: center;">
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+        </tr>
+        <tr id="0">
+            <td>0</td>
+            <td>Jhone</td>
+            <td>10</td>
+            <td><button onclick="delR(this.closest('tr').id);">Delete</button></td>
+        </tr>
+        <tr id="1">
+            <td>1</td>
+            <td>Doe</td>
+            <td>9</td>
+            <td><button onclick="delR(this.closest('tr').id);">Delete</button></td>
+        </tr>
+        <tr id="2">
+            <td>2</td>
+            <td>Mark</td>
+            <td>10</td>
+            <td><button onclick="delR(this.closest('tr').id);">Delete</button></td>
+        </tr>
+        <tr id="3">
+            <td>3</td>
+            <td>James</td>
+            <td>8</td>
+            <td><button onclick="delR(this.closest('tr').id);">Delete</button></td>
+        </tr>
+        <tr id="4">
+            <td>4</td>
+            <td>Kajol</td>
+            <td>3</td>
+            <td><button onclick="delR(this.closest('tr').id);">Delete</button></td>
+        </tr>
+        <tr id="5">
+            <td>5</td>
+            <td>Raju</td>
+            <td>9</td>
+            <td><button onclick="delR(this.closest('tr').id);">Delete</button></td>
+        </tr>
+        <tr id="6">
+            <td>6</td>
+            <td>Martin</td>
+            <td>4</td>
+            <td><button onclick="delR(this.closest('tr').id);">Delete</button></td>
+        </tr>
+        <tr id="7">
+            <td>7</td>
+            <td>Nikola Tesla</td>
+            <td>1</td>
+            <td><button onclick="delR(this.closest('tr').id);">Delete</button></td>
+        </tr>
+        <tr id="8">
+            <td>8</td>
+            <td>Einstein</td>
+            <td>6</td>
+            <td><button onclick="delR(this.closest('tr').id);">Delete</button></td>
+        </tr>
+        <tr id="9">
+            <td>9</td>
+            <td>James</td>
+            <td>8</td>
+            <td><button onclick="delR(this.closest('tr').id);">Delete</button></td>
+        </tr>
+    </table>
+    <div style="display: flex; justify-content: center; margin: 25px 0px;">
+        <img onmouseover="src='https://th.bing.com/th/id/OIP.P8qG6FqtFtkTwYASUfSqTQHaIQ?w=161&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3'" onmouseout="src='https://th.bing.com/th/id/OIP.wPblXiEWqm7W1lXP0ExvdQHaH5?w=168&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3'" src="https://th.bing.com/th/id/OIP.wPblXiEWqm7W1lXP0ExvdQHaH5?w=168&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Hover Here">
+    </div>
+    <div style="display: flex; justify-content: center; margin: 25px 0px;">
+        Counter
+        <button onclick="calc(this)" style="margin: 0px 20px;">+</button>
+        <span id="count-value">0</span>
+        <button onclick="calc(this)" style="margin: 0px 20px;">-</button>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
