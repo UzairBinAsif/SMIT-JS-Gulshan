@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - 15 (Ch 48 - 52)</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .signup-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #email, #pass {
+            margin: 10px 0px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 50vw;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Events -->
+    <div class="container">
+        <section>
+            <!-- Q1 -->
+            <h1>Sign Up</h1>
+             <form class="signup-form">
+                <input type="email" id="email" placeholder="Enter your email">
+                <input type="password" id="pass" placeholder="Enter your password">
+                <a href="javascript:void(0)" onclick="checkForm('email', 'pass')">Sign Up</a>
+             </form>
+            <h2 id="showEmail"></h2>
+            <h2 id="showPass"></h2>
+        </section>
+
+        <section>
+            <!-- Q2 -->
+            <div>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis pariatur deserunt, atque voluptatum qui unde neque excepturi eius sapiente facere similique, blanditiis explicabo ad itaque provident error. 
+            </div>
+            <a href="javascript:void(0)" id="seeBtn" onclick="seeMore(this.id)">See more</a>
+        </section>
+
+        <section>
+            <!-- Q3 -->
+            <form id="addForm" onsubmit="addStudent(event)">
+                <h2>Add Student</h2>
+                <input type="text" id="name" placeholder="Enter name" required>
+                <input type="number" id="class" placeholder="Enter class" required>
+                <button type="submit">Add Student</button>
+            </form>
+
+            <table id="studentTable">
+                <tr>
+                    <th>Index</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Actions</th>
+                </tr>
+            </table>
+            
+            <form id="editForm" onsubmit="saveEdit(event)">
+                <h2>Edit Student</h2>
+                <input type="hidden" id="editIndex">
+                <input type="text" id="editName" required>
+                <input type="number" id="editClass" required>
+                <button type="submit">Save Changes</button>
+                <button type="button" onclick="cancelEdit()">Cancel</button>
+            </form>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
